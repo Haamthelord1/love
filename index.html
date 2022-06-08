@@ -19,6 +19,8 @@
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="style.css">
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
@@ -51,6 +53,26 @@
 
 	</head>
 	<body>
+        <div class="container night-mode-available">
+    <div class="night-mode-button">
+      <input type="checkbox" class="checkbox" id="night-mode">
+      <label for="night-mode" class="label">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="blob"></div>
+      </label>
+    </div>
+    <div class="info night-mode-available">
+      <h1>Hello World</h1>
+    </div>
+  </div>
+  <script type="text/javascript">
+    document.querySelector('.checkbox').addEventListener('change',()=>{
+      document.querySelectorAll('.night-mode-available').forEach(ele=>{
+        ele.classList.toggle('night');
+      })
+    });
+  </script>
 	<div id="colorlib-page">
 		<div class="container-wrap">
 		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
