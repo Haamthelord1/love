@@ -70,6 +70,7 @@ figure {
 #colorlib-page {
   width: 100%;
   overflow: hidden;
+  align-items: center;
   position: relative; }
 
 #colorlib-aside {
