@@ -70,7 +70,6 @@ figure {
 #colorlib-page {
   width: 100%;
   overflow: hidden;
-  align-items: center;
   position: relative; }
 
 #colorlib-aside {
@@ -79,6 +78,7 @@ figure {
   float: left;
   width: 300px;
   position: fixed;
+  align-items: center;
   overflow-y: scroll;
   z-index: 1001;
   background: #f2f3f7;
